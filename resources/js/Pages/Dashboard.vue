@@ -126,9 +126,8 @@ const handleOk = (e) => {
                     title="Basic Modal"
                     @ok="handleOk"
                 >
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
+                <a-input v-model:value="value" allow-clear placeholder="Name of the Item" />
+                <a-input class="mt-5" v-model:value="value" allow-clear placeholder="Item" />
                 </a-modal>
             </div>
         </div>
