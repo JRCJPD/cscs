@@ -1,5 +1,8 @@
 import './bootstrap';
 import '../css/app.css';
+import '../../node_modules/@popperjs/core/dist/umd/popper.min.js';
+
+import 'bootstrap/js/dist/dropdown';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
