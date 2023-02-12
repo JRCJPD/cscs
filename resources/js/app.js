@@ -1,8 +1,10 @@
 import './bootstrap';
 import '../css/app.css';
 import '../../node_modules/@popperjs/core/dist/umd/popper.min.js';
+import Antd from 'ant-design-vue';
 
 import 'bootstrap/js/dist/dropdown';
+import 'ant-design-vue/dist/antd.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -18,6 +20,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue, Ziggy)
+            .use(Antd)
             .mount(el);
     },
     progress: {

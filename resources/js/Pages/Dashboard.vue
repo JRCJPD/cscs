@@ -1,6 +1,22 @@
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head } from "@inertiajs/vue3";
+import { ref } from "vue";
+
+const showModal = ref(false);
+
+function openModal() {
+    if (showModal.value) {
+        showModal.value = false;
+    } else {
+        showModal.value = true;
+    }
+    console.log(showModal.value);
+}
+const handleOk = (e) => {
+    console.log("working");
+    showModal.value = false;
+};
 </script>
 
 <template>
@@ -17,6 +33,11 @@ import { Head } from "@inertiajs/vue3";
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="mb-5">
+                    <a-button type="primary" @click="openModal">
+                        Add Item
+                    </a-button>
+                </div>
                 <div
                     class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
                 >
@@ -99,6 +120,16 @@ import { Head } from "@inertiajs/vue3";
                         </table>
                     </div>
                 </div>
+
+                <a-modal
+                    v-model:visible="showModal"
+                    title="Basic Modal"
+                    @ok="handleOk"
+                >
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                </a-modal>
             </div>
         </div>
     </AuthenticatedLayout>
