@@ -48,10 +48,7 @@ const showingNavigationDropdown = ref(false);
         <a-layout-sider class="bg-gray-900" width="230">
             <div class="px-3 py-4">
                 <a>
-                    <img
-                        src="/Simple_CSCS_Logo.jpg"
-                        class="max-w-[50%] mx-auto"
-                    />
+                    <img src="/Simple_CSCS_Logo.jpg" class="max-w-[50%]" />
                 </a>
             </div>
             <a-menu
