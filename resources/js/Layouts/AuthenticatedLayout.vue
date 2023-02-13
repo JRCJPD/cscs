@@ -28,11 +28,11 @@ let links = [
         path: "/menu",
         icon: CrownOutlined,
     },
-    // {
-    //     label: "Tab 2",
-    //     path: "/images",
-    //     icon: AreaChartOutlined,
-    // },
+    {
+        label: "Inventory",
+        path: "/inventory",
+        icon: AreaChartOutlined,
+    },
     // {
     //     label: "Tab 3",
     //     path: "/dashboard",
