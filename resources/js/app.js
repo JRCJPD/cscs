@@ -1,15 +1,29 @@
 import './bootstrap';
 import '../css/app.css';
-import '../../node_modules/@popperjs/core/dist/umd/popper.min.js';
 import Antd from 'ant-design-vue';
 
-import 'bootstrap/js/dist/dropdown';
 import 'ant-design-vue/dist/antd.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
+import { InertiaProgress } from '@inertiajs/progress';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
+import { Link } from '@inertiajs/inertia-vue3'
+import { Inertia } from '@inertiajs/inertia'
+
+window.back = () => window.history.back() // use to do back
+window.addEventListener('popstate', (event) => {
+  event.stopImmediatePropagation()
+
+  Inertia.reload({
+    preserveState: false,
+    preserveScroll: false,
+    replace: true,
+    onSuccess: (page) => Inertia.setPage(page),
+    onError: () => (window.location.href = event.state.url)
+  })
+})
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
@@ -21,9 +35,9 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue, Ziggy)
             .use(Antd)
+            .component('Link', Link)
             .mount(el);
     },
-    progress: {
-        color: '#4B5563',
-    },
 });
+
+InertiaProgress.init({ color: '#4B5563' });
