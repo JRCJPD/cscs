@@ -38,7 +38,12 @@ const handleOk = (e) => {
                     <!--Card 1-->
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -46,6 +51,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -69,14 +75,19 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
                     </div>
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -84,6 +95,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -107,14 +119,19 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
                     </div>
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -122,6 +139,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -145,14 +163,19 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
                     </div>
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -160,6 +183,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -183,14 +207,19 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
                     </div>
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -198,6 +227,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -221,14 +251,19 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
                     </div>
                     <div
                         class="max-w-sm rounded shadow-lg mb-2"
-                        style="padding-bottom: 10px !important; width: 350px"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
                     >
                         <img
                             style="
@@ -236,6 +271,7 @@ const handleOk = (e) => {
                                 height: 120px;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-top: 2px;
                             "
                             src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
                             alt="Cake"
@@ -259,7 +295,7 @@ const handleOk = (e) => {
                                 >Stock:10</span
                             >
                             <span
-                                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
                                 ><a-button type="primary">Buy</a-button></span
                             >
                         </div>
