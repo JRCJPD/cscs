@@ -31,7 +31,7 @@ const handleOk = (e) => {
             </h2>
         </template>
 
-        <div class="py-12">
+        <div class="py-12 h-screen">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="mb-5 text-center">Welcome to CSCS dashboard!!!</div>
             </div>
