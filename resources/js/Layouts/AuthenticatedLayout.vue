@@ -17,6 +17,8 @@ import {
     DashboardOutlined,
 } from "@ant-design/icons-vue";
 
+const selectedKeys = ref([window.location.href]);
+
 let links = [
     {
         label: "Dashboard",
@@ -45,14 +47,15 @@ const showingNavigationDropdown = ref(false);
 
 <template>
     <a-layout class="min-h-screen font-sans font-normal">
-        <a-layout-sider class="bg-gray-900" width="230">
+        <a-layout-sider style="background-color: #64b5f6" width="230">
             <div class="px-3 py-4">
                 <a>
                     <img src="/Simple_CSCS_Logo.jpg" class="max-w-[50%]" />
                 </a>
             </div>
             <a-menu
-                class="bg-gray-900"
+                style="background-color: #64b5f6"
+                class="hover:bg-gray-200"
                 v-model:selectedKeys="selectedKeys"
                 theme="dark"
                 mode="inline"
@@ -68,7 +71,10 @@ const showingNavigationDropdown = ref(false);
             </a-menu>
         </a-layout-sider>
         <a-layout>
-            <a-layout-header class="bg-white flex justify-end">
+            <a-layout-header
+                class="bg-white flex justify-end"
+                style="background-color: #64b5f6"
+            >
                 <a-dropdown :trigger="['click']">
                     <a
                         class="ant-dropdown-link text-white font-semibold"
