@@ -44,7 +44,7 @@ const showingNavigationDropdown = ref(false);
 </script>
 
 <template>
-    <a-layout class="h-[100vh] font-sans font-normal">
+    <a-layout class="min-h-screen font-sans font-normal">
         <a-layout-sider class="bg-gray-900" width="230">
             <div class="px-3 py-4">
                 <a>

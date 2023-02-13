@@ -300,6 +300,270 @@ const handleOk = (e) => {
                             >
                         </div>
                     </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded shadow-lg mb-2"
+                        style="
+                            padding-bottom: 10px !important;
+                            width: 350px;
+                            background-color: #ffc0cb;
+                            margin-right: 10px;
+                        "
+                    >
+                        <img
+                            style="
+                                width: 180px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 2px;
+                            "
+                            src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+                            alt="Cake"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Cake</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, Nonea!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >P120.00</span
+                            >
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                >Stock:10</span
+                            >
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                                ><a-button type="primary">Buy</a-button></span
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
