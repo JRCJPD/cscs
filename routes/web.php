@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\InventoryController;
-use App\Http\Controllers\MenuController;
+use App\Http\Controllers\DailySalesReportController;
+use App\Http\Controllers\MaintenanceController;
+use App\Http\Controllers\ProductListController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SalesController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -35,8 +37,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/menu', [MenuController::class, 'index'])->name('menu.index');
-    Route::get('/inventory', [InventoryController::class, 'index'])->name('inventory.index');
+    //For Product List
+    Route::get('/product-list', [ProductListController::class, 'index'])->name('product-list.index');
+    Route::post('/create-product', [ProductListController::class, 'store'])->name('product-list.create');
+    Route::delete('/delete-product/{id}', [ProductListController::class, 'destroy'])->name('product-list.destroy');
+
+    Route::get('/sales', [SalesController::class, 'index'])->name('sales.index');
+    Route::get('/daily-sales', [DailySalesReportController::class, 'index'])->name('daily-sales.index');
+    Route::get('/maintenance', [MaintenanceController::class, 'index'])->name('maintenance.index');
 });
 
 require __DIR__.'/auth.php';

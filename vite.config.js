@@ -8,7 +8,7 @@ export default defineConfig({
         preprocessorOptions: {
             less: {
                 modifyVars: {
-                    'primary-color': '#1195F1',
+                    'primary-color': '#263e8e',
                     'border-radius-base': '5px'
                 },
                 javascriptEnabled: true

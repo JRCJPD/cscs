@@ -26,20 +26,25 @@ let links = [
         icon: DashboardOutlined,
     },
     {
-        label: "Menu",
-        path: "/menu",
+        label: "Product List",
+        path: "/product-list",
         icon: CrownOutlined,
     },
     {
-        label: "Inventory",
-        path: "/inventory",
+        label: "Sales",
+        path: "/sales",
         icon: AreaChartOutlined,
     },
-    // {
-    //     label: "Tab 3",
-    //     path: "/dashboard",
-    //     icon: UserOutlined,
-    // },
+    {
+        label: "Daily Sales Report",
+        path: "/daily-sales",
+        icon: DashboardOutlined,
+    },
+    {
+        label: "Maintenance",
+        path: "/maintenance",
+        icon: DashboardOutlined,
+    },
 ];
 
 const showingNavigationDropdown = ref(false);
@@ -47,14 +52,14 @@ const showingNavigationDropdown = ref(false);
 
 <template>
     <a-layout class="min-h-screen font-sans font-normal">
-        <a-layout-sider style="background-color: #64b5f6" width="230">
+        <a-layout-sider style="background-color: #263e8e" width="230">
             <div class="px-3 py-4">
                 <a>
                     <img src="/Simple_CSCS_Logo.jpg" class="max-w-[50%]" />
                 </a>
             </div>
             <a-menu
-                style="background-color: #64b5f6"
+                style="background-color: #263e8e"
                 class="hover:bg-gray-200"
                 v-model:selectedKeys="selectedKeys"
                 theme="dark"
@@ -73,7 +78,7 @@ const showingNavigationDropdown = ref(false);
         <a-layout>
             <a-layout-header
                 class="bg-white flex justify-end"
-                style="background-color: #64b5f6"
+                style="background-color: #263e8e"
             >
                 <a-dropdown :trigger="['click']">
                     <a
