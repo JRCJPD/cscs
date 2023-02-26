@@ -12,18 +12,18 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { Link } from '@inertiajs/inertia-vue3'
 import { Inertia } from '@inertiajs/inertia'
 
-// window.back = () => window.history.back() // use to do back
-// window.addEventListener('popstate', (event) => {
-//   event.stopImmediatePropagation()
+window.back = () => window.history.back() // use to do back
+window.addEventListener('popstate', (event) => {
+  event.stopImmediatePropagation()
 
-//   Inertia.reload({
-//     preserveState: false,
-//     preserveScroll: false,
-//     replace: true,
-//     onSuccess: (page) => Inertia.setPage(page),
-//     onError: () => (window.location.href = event.state.url)
-//   })
-// })
+  Inertia.reload({
+    preserveState: false,
+    preserveScroll: false,
+    replace: true,
+    onSuccess: (page) => Inertia.setPage(page),
+    onError: () => (window.location.href = event.state.url)
+  })
+})
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 

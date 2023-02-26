@@ -8,9 +8,10 @@ const props = defineProps({
     products: Array,
 });
 
-const visible = ref(false);
+const showAddProductModal = ref(false);
+const showEditProductModal = ref(false);
 
-const showModal = ref(false);
+const productId = ref(null);
 
 const form = ref({
     category: null,
@@ -61,9 +62,35 @@ const handleAddProduct = () => {
     Inertia.post("/create-product", form.value);
 };
 
+const handleCancel = () => {
+    form.value = {};
+};
+
 const handleDelete = (id) => {
     Inertia.delete(`/delete-product/${id}`);
     console.log(id);
+};
+
+const editProductModal = (product) => {
+    showEditProductModal.value = true;
+    console.log(product.name);
+    productId.value = product.id;
+    form.value.category = product.category;
+    form.value.name = product.name;
+    form.value.description = product.description;
+    form.value.price = product.price;
+    form.value.stock = product.stock;
+};
+
+const updateProduct = () => {
+    Inertia.put(`/update-product/${productId.value}`, {
+        _method: "put",
+        category: form.value.category,
+        name: form.value.name,
+        description: form.value.description,
+        price: form.value.price,
+        stock: form.value.stock,
+    });
 };
 </script>
 
@@ -82,8 +109,13 @@ const handleDelete = (id) => {
         <div class="py-12 h-screen">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="mb-5 text-center">Product list</div>
-                <div>
-                    <button @click="showModal = true">Add product</button>
+                <div class="mb-5">
+                    <a-button
+                        type="primary"
+                        @click="showAddProductModal = true"
+                    >
+                        Add product
+                    </a-button>
                 </div>
                 <div>
                     <a-table :columns="columns" :data-source="props.products">
@@ -131,14 +163,16 @@ const handleDelete = (id) => {
                             <template v-else-if="column.key === 'action'">
                                 <a-popover title="Actions" trigger="click">
                                     <template #content>
-                                        <div>
-                                            <a @click="hide">Update</a>
+                                        <div class="flex space-x-5">
+                                            <a @click="editProductModal(record)"
+                                                >Update</a
+                                            >
                                             <a @click="handleDelete(record.id)"
                                                 >Delete</a
                                             >
                                         </div>
                                     </template>
-                                    <a-button type="primary">Click me</a-button>
+                                    <a-button type="primary">view</a-button>
                                 </a-popover>
                             </template>
                         </template>
@@ -147,14 +181,46 @@ const handleDelete = (id) => {
             </div>
         </div>
         <a-modal
-            v-model:visible="showModal"
-            title="Basic Modal"
+            v-model:visible="showAddProductModal"
+            title="Add Product"
             @ok="handleAddProduct"
+            @cancel="handleCancel"
         >
             <a-form
                 :model="formState"
                 name="basic"
-                :label-col="{ span: 3 }"
+                :label-col="{ span: 5 }"
+                :wrapper-col="{ span: 16 }"
+                autocomplete="off"
+                @finish="onFinish"
+                @finishFailed="onFinishFailed"
+            >
+                <a-form-item label="Category" name="category">
+                    <a-input v-model:value="form.category" />
+                </a-form-item>
+                <a-form-item label="Name" name="name">
+                    <a-input v-model:value="form.name" />
+                </a-form-item>
+                <a-form-item label="Description" name="description">
+                    <a-input v-model:value="form.description" />
+                </a-form-item>
+                <a-form-item label="Price" name="price">
+                    <a-input v-model:value="form.price" />
+                </a-form-item>
+                <a-form-item label="Stock" name="stock">
+                    <a-input type="number" v-model:value="form.stock" />
+                </a-form-item>
+            </a-form>
+        </a-modal>
+        <a-modal
+            v-model:visible="showEditProductModal"
+            title="Edit Product"
+            @ok="updateProduct"
+        >
+            <a-form
+                :model="formState"
+                name="basic"
+                :label-col="{ span: 5 }"
                 :wrapper-col="{ span: 16 }"
                 autocomplete="off"
                 @finish="onFinish"

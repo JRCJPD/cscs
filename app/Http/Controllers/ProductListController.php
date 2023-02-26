@@ -45,14 +45,6 @@ class ProductListController extends Controller
      */
     public function store(Request $request)
     {
-        // $db = new ProductListModel;
-        // $db->category = $request->category;
-        // $db->name = $request->name;
-        // $db->description = $request->description;
-        // $db->price = $request->price;
-        // $db->stock = $request->stock;
-        // $db->save();
-
         ProductListModel::create([
             'category' => Request::input('category'),
             'name' => Request::input('name'),
@@ -93,9 +85,18 @@ class ProductListController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        //
+        $product = ProductListModel::query()->where('id', $id);
+        $product->update([
+            'category' => Request::input('category'),
+            'name' => Request::input('name'),
+            'description' => Request::input('description'),
+            'price' => Request::input('price'),
+            'stock' => Request::input('stock'),
+        ]);
+
+        return Redirect::route('product-list.index');
     }
 
     /**

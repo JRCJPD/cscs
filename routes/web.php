@@ -39,8 +39,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     //For Product List
     Route::get('/product-list', [ProductListController::class, 'index'])->name('product-list.index');
-    Route::post('/create-product', [ProductListController::class, 'store'])->name('product-list.create');
+    Route::post('/create-product', [ProductListController::class, 'store'])->name('product-list.store');
     Route::delete('/delete-product/{id}', [ProductListController::class, 'destroy'])->name('product-list.destroy');
+    Route::put('/update-product/{id}', [ProductListController::class, 'update'])->name('product-list.update');
 
     Route::get('/sales', [SalesController::class, 'index'])->name('sales.index');
     Route::get('/daily-sales', [DailySalesReportController::class, 'index'])->name('daily-sales.index');
